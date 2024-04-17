@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      p.special {
+        font-size: 12px;
+        color: red;
+      }
+
+      .special {
+        color: violet;
+      }
+
+      .box {
+        border: 6px solid rgba(120, 120, 120, 0.25);
+        padding: 20px 50px;
+        transition: border 500ms cubic-bezier(1, 0.1, 0, 0.14);
+      }
+
+      .box:hover {
+        border: 6px solid rgba(255, 0, 0, 0.25);
+      }
+
+      .box p {
+        text-transform: uppercase;
+      }
+
+      .box div {
+        border-bottom: 1px solid black;
+      }
+
+      #test {
+        font-size: 48px;
+      }
+
+      .box [href="http://google.com"]
+      {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="special">TEST !!!</h1>
+      <p id="test">TEST !!!</p>
+      <nav>
+        <a href="#">Home</a>
+        <a href="/about.html">About <span style="color: red">Us</span></a>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="https://1.img-dpreview.com/files/p/E~TC4x3S590x0~articles/7961724650/General-Mt-Donna-Buang-Myrtle-Beech-Tree-Victoria.jpeg"
+        alt="Landscape of a tree"
+        width="300"
+      />
+      <div class="box">
+        <button type="submit">Test #1</button>
+        <button type="button">Test #2</button>
+        <a href="http://google.com">Google</a>
+      </div>
+      <p style="font-size: 28px; color: violet">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odio
+        voluptatibus atque nobis harum est sed incidunt, distinctio quo, earum
+        molestias! Aspernatur nobis temporibus vitae id atque. Cupiditate, sunt
+        eos?
+      </p>
+      <div class="box">
+        <div><p>Name: John</p></div>
+        <div><p>Lastname: Doe</p></div>
+      </div>
+      <p class="special">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odio
+        voluptatibus atque nobis harum est sed incidunt, distinctio quo, earum
+        molestias! Aspernatur nobis temporibus vitae id atque. Cupiditate, sunt
+        eos?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odio
+        voluptatibus atque nobis harum est sed incidunt, distinctio quo, earum
+        molestias! Aspernatur nobis temporibus vitae id atque. Cupiditate, sunt
+        eos?
+      </p>
+    </main>
+    <footer>
+      <p>2024 &copy;</p>
+    </footer>
+  </body>
+</html>

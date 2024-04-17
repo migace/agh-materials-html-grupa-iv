@@ -1,0 +1,76 @@
+.header {
+  box-shadow: 0px 20px 27px -6px rgba(66, 68, 90, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  /* padding-left: 24px;
+  padding-right: 24px; */
+  height: 50px;
+}
+
+.header h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.header ul {
+  display: flex;
+  gap: 16px;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar,
+.content {
+  height: calc(100vh - 50px);
+}
+
+/* .sidebar {
+  height: 100vh;
+} */
+
+.sidebar {
+  width: 300px;
+  background: rgb(11, 51, 56);
+  background: linear-gradient(
+    207deg,
+    rgba(11, 51, 56, 0.7049413515406162) 0%,
+    rgba(30, 149, 164, 1) 42%,
+    rgba(10, 203, 227, 0.15872286414565828) 100%
+  );
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.sidebar ul {
+  font-size: 28px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* .sidebar ul li {
+  margin-bottom: 24px;
+}
+
+.sidebar ul li:last-child {
+  margin: 0;
+} */
+
+.content {
+  width: calc(100% - 300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content div {
+  border: 6px dotted #666;
+  padding: 75px;
+  font-size: 24px;
+}
