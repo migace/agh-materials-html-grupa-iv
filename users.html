@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+
+    <style>
+      th,
+      td,
+      tbody {
+        border: 1px solid #000;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      button {
+        margin: 20px 0;
+      }
+    </style>
+    <script defer src="./users.js"></script>
+  </head>
+  <body>
+    <h1>USERS</h1>
+    <button id="fetch-users">Fetch users</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody id="users"></tbody>
+    </table>
+  </body>
+</html>

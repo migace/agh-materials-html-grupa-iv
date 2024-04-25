@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube</title>
+    <style>
+      #cube {
+        width: 250px;
+        height: 250px;
+        border: 4px dashed #000;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cube"></div>
+    <script>
+      const cubeEl = document.getElementById("cube");
+      // 0 - 300
+      // 300 - 0
+
+      function isRightBorder() {
+        return cubeEl.offsetWidth + cubeEl.offsetLeft === window.outerWidth;
+      }
+
+      function isLeftBorder() {
+        return cubeEl.offsetLeft === 0;
+      }
+
+      let counter = 0;
+      let direction = 1; // 0 - left, 1 - right
+      setInterval(function () {
+        // cubeEl.style.left = `${counter++}px`;
+
+        if (direction === 1) {
+          counter++;
+        } else {
+          counter--;
+        }
+
+        if (isRightBorder()) {
+          direction = 0;
+        } else if (isLeftBorder()) {
+          direction = 1;
+        }
+
+        cubeEl.style.left = `${counter}px`;
+      }, 1000 / 60);
+    </script>
+  </body>
+</html>
